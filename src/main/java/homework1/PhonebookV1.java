@@ -9,7 +9,6 @@ public class PhonebookV1 {
 
         Entry[] entries = FileUtils.readFile("raw_phonebook_data.csv");
         MergeSort.sort(entries);
-
         FileUtils.writeToFile(entries, "result.csv");
 
         Scanner input = new Scanner(System.in);
